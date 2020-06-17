@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="style.css">
+
+     <!-- load jQuery and tablesorter scripts -->
+     <script src="./js/jQuery.js">
+     </script>
+
+     </script>
+
+     <link rel="stylesheet" href="css/theme.green.css">
+     <!-- load jQuery and tablesorter scripts -->
+     <script type="text/javascript" src="js/jquery-latest.js"></script>
+     <script type="text/javascript" src="js/jquery.tablesorter.js"></script>
+     <!-- tablesorter widgets (optional) -->
+     <script type="text/javascript" src="js/jquery.tablesorter.widgets.js"></script>
+
+
+     <script type="text/JavaScript" src="js/tab.js"></script>
+
+     <title>Hello, world!</title>
+
+</head>
+
+<body>
+     <header class="sticky-top bg-primary p-2 shadow-sm">
+          <nav class="navbar navbar-expand text-light">
+               <a class="navbar-brand btn btn-primary" href="index.html">Głowna</a>
+
+               <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                         <li class="nav-item active">
+                              <a class="nav-link text-light btn btn-primary"
+                                   href="http://lcieszynski.zut.edu.pl/fileadmin/DPD/instrukcja_2019.pdf">Instrukcja</a>
+                         </li>
+                    </ul>
+                    <button type="button" id="koszykOpen" class="btn btn-primary" data-toggle="modal"
+                         data-target="#koszyk">
+                         Koszyk
+                    </button>
+               </div>
+          </nav>
+
+     </header>
+     <div class="container-fluid p-3 mx-auto pb-5">
+          <div class="row">
+               <div id="" class="col-md-2 bg-light p-3 mx-auto ">
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                         ultricies nec lacus eu
+                         egestas. Aliquam molestie, neque nec aliquet ornare, orci enim sodales libero,
+                         vitae fringilla lectus sapien a
+                         mi. Duis dictum ante id porttitor posuere. Proin bibendum dapibus massa varius
+                         fermentum. Nam ut fermentum
+                         felis. Morbi eu bibendum eros. Vivamus lacinia posuere orci tincidunt viverra.
+                         Nullam ut pulvinar sapien, sit
+                         amet sagittis sem. Vivamus in velit est. Aliquam egestas erat condimentum massa
+                         vulputate, et finibus purus
+                         egestas. Duis ornare, eros nec volutpat tempus, turpis eros lobortis justo, sit
+                         amet molestie urna magna a
+                         dolor. Donec bibendum quis sem sed rutrum. Nulla condimentum velit sit amet
+                         purus viverra bibendum. Etiam id
+                         nisi dapibus sapien facilisis fringilla feugiat sed augue. Maecenas commodo orci
+                         eu viverra volutpat.</p>
+
+
+               </div>
+               <div id="center" class="col-md-7 bg-light p-3 mx-auto">
+                    <form enctype="multipart/form-data" method="post" name="abc" id="addCommodityForm"
+                         class="col-lg-9 col-xl-7 col-md-11 mx-auto ">
+                         <div class="form-group row ">
+                              <label for="nameCommodity" class="col-md-4 col-form-label">Nazwa
+                                   Towaru</label>
+                              <div class="col-md-7">
+                                   <input type="text" name="nameCommodity" class="form-control" id="nameCommodity"
+                                        required>
+                                   <div></div>
+                              </div>
+                         </div>
+                         <div class="form-group row">
+                              <label for="codeCommodity" class="col-md-4 col-form-label">Kod
+                                   Towaru</label>
+                              <div class="col-md-7">
+                                   <input type="text" name="codeCommodity" class="form-control my-auto"
+                                        id="codeCommodity" required>
+                                   <div></div>
+                              </div>
+                         </div>
+                         <div class="form-group row">
+                              <label for="priceNet" class="col-md-4 col-form-label">Cena Netto</label>
+                              <div class="col-md-7">
+                                   <input type="number" name="priceNet" class="form-control" id="priceNet" required>
+                                   <div></div>
+                              </div>
+                         </div>
+                         <div class="form-group row">
+                              <label for="vat" class="col-md-4 col-form-label">VAT</label>
+                              <div class="col-md-7">
+                                   <input type="number" name="vat" class="form-control" id="vat" required>
+                                   <div></div>
+                              </div>
+                         </div>
+                         <div class="form-group row">
+                              <label for="priceBrut" class="col-md-4 col-form-label">Cena
+                                   Brutto</label>
+                              <div class="col-md-7">
+                                   <input type="number" name="priceBrut" class="form-control" id="priceBrut" readonly>
+                              </div>
+                         </div>
+                         <div class="form-group row">
+                              <label for="category" class="col-md-4 col-form-label">Kategoria</label>
+                              <div class="col-md-7">
+                                   <select id="category" name="category" class="form-control" required>
+                                        <option value="0">Wybierz</option>
+                                        <option value="Narzędzia">Narzędzia</option>
+                                        <option value="Ubrania">Ubrania</option>
+                                        <option value="Samochody">Samochody</option>
+                                        <option value="rtv">rtv</option>
+                                        <option value="sport">sport</option>
+                                   </select>
+                                   <div></div>
+                              </div>
+                         </div>
+                         <div class="form-group row">
+                              <label for="options" class="col-md-4 col-form-label">Wybierz
+                                   (przytrzymaj Ctrl lub Shift (lub przeciągnij
+                                   myszą), aby wybrać więcej niż jeden)</label>
+                              <div class="col-md-7">
+                                   <select id="options" multiple name="options" class="form-control" required>
+                                        <option>Opcja 1</option>
+                                        <option>Opcja 2</option>
+                                        <option>Opcja 3</option>
+                                        <option>Opcja 4</option>
+                                        <option>Opcja 5</option>
+                                   </select>
+                                   <div></div>
+                              </div>
+                         </div>
+                         <div id="rate" class="form-group row" required>
+                              <label for="rate" class="col-md-4 col-form-label">Ocena od 0 do
+                                   5</label>
+                              <div class="form-check mx-1"">
+                    <input class=" form-check-input" type="radio" name="rate" id="exampleRadios1" value="1">
+                                   <label class="form-check-label" for="exampleRadios1">
+                                        1
+                                   </label>
+                              </div>
+                              <div class="form-check mx-1"">
+                    <input class=" form-check-input" type="radio" name="rate" id="exampleRadios2" value="2">
+                                   <label class="form-check-label" for="exampleRadios2">
+                                        2
+                                   </label>
+                              </div>
+                              <div class="form-check mx-1"">
+                    <input class=" form-check-input" type="radio" name="rate" id="exampleRadios3" value="3">
+                                   <label class="form-check-label" for="exampleRadios3">
+                                        3
+                                   </label>
+                              </div>
+                              <div class="form-check mx-1"">
+                    <input class=" form-check-input" type="radio" name="rate" id="exampleRadios4" value="4">
+                                   <label class="form-check-label" for="exampleRadios4">
+                                        4
+                                   </label>
+                              </div>
+                              <div class="form-check mx-1">
+                                   <input class="form-check-input" type="radio" name="rate" id="exampleRadios5"
+                                        value="5">
+                                   <label class="form-check-label" for="exampleRadios65">
+                                        5
+                                   </label>
+                              </div>
+                              <div id="errorForRate"></div>
+                         </div>
+                         <div class="form-group row">
+                              <label class="col-md-4 col-form-label" for="photo">Zdjęcie</label>
+                              <div class="col-md-7">
+                                   <label class="custom-file-label form-control" for="photo">Choose
+                                        file</label>
+                                   <input type="file" name="file" class="custom-file-input" id="photo" required>
+                                   <div></div>
+                              </div>
+                         </div>
+                         <input type="submit" class="btn btn-primary" id="formButton" value="Wyślij">
+                    </form>
+                    <div class="m-4">
+                         <select id="sortOption">
+                              <option value="1">cena od najniższej</option>
+                              <option value="2">cena od najwyższej</option>
+                              <option value="3">ocena od najniższej</option>
+                              <option value="4">ocena od najwyższej,</option>
+                              <option value="5">nazwa od A</option>
+                              <option value="6">nazwa od Z</option>
+                         </select>
+                         <table id="myTable" class="tablesorter table tablesorter-green">
+                              <thead>
+                                   <tr>
+                                        <th scope="col">Nazwa</th scope="col">
+                                        <th scope="col" class="disable">Kod</th>
+                                        <th scope="col" class="disable">Netto</th>
+                                        <th scope="col" class="disable">VAT</th>
+                                        <th scope="col">Brutto</th scope="col">
+                                        <th scope="col" class="disable">Kategoria</th>
+                                        <th scope="col" class="disable">Opcja</th>
+                                        <th scope="col">Ocena</th scope="col">
+                                        <th scope="col" class="disable">Zdjęcie</th>
+                                        <th scope="col" class="disable"></th>
+                                   </tr>
+                              </thead>
+                              <tbody>
+
+                              </tbody>
+                         </table>
+                    </div>
+
+               </div>
+               <div class="col-md-2 bg-light p-3 mx-auto">
+                    <div class="card">
+                         <img src="pobrane.jpg" class="card-img-top" alt="...">
+                         <div class="card-body">
+                              <h5 class="card-title">Kot</h5>
+                              <p class="card-text text-justify">Lorem ipsum dolor sit amet,
+                                   consectetur adipiscing elit. Nullam eu tempor
+                                   est, eget blandit urna. In congue velit est, id mollis lorem
+                                   porttitor id. Maecenas sit amet fermentum
+                                   massa. Aenean volutpat tortor lacus, eu luctus nisl blandit vel.
+                                   Orci varius natoque penatibus et magnis
+                                   dis parturient montes, nascetur ridiculus mus. Vivamus sit amet
+                                   velit placerat nibh imperdiet fermentum id
+                                   in eros. Mauris consequat sapien sed nulla varius, ac bibendum
+                                   libero imperdiet. Morbi nec lectus lectus.
+                              </p>
+                              <a href="#" class="btn btn-primary">Więcej o mmnie</a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <footer class="footer fixed-bottom p-3 mt-6 bg-primary text-light">
+
+          Piotr Dudkiewicz
+     </footer>
+
+
+     <div class="modal fade" id="koszyk" data-backdrop="static" tabindex="-1" role="dialog"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+               <div class="modal-content">
+                    <div class="modal-header">
+                         <h5 class="modal-title" id="staticBackdropLabel">Twój Koszyk</h5>
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                         </button>
+                    </div>
+                    <div class="modal-body">
+                         <table id="tableKoszyk" class="table">
+                              <thead class="bg-primary text-white">
+                                   <tr>
+                                        <th scope="col">Nazwa</th>
+                                        <th scope="col">Brutto</th>
+                                        <th scope="col">Ilość</th>
+                                   </tr>
+                              </thead>
+                              <tbody>
+                              </tbody>
+                         </table>
+
+                         <div id="sum" class="badge badge-primary col-4"></div>
+                         <div>Opcja dostawy</div>
+                         <select id="dostawa" class="form-control col-4">
+                              <option value="10">Poczta (10 zł)</option>
+                              <option value="15">Kurier (15 zł)</option>
+                              <option value="0">Osobiście</option>
+                         </select>
+                    </div>
+
+                    <div class="modal-footer">
+                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Zamknij</button>
+                         <button type="button" id="zaplac" class="btn btn-primary">Zapłać</button>
+                    </div>
+               </div>
+          </div>
+
+     </div>
+     <!-- Optional JavaScript -->
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+     </script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+          integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+     </script>
+     <script src="js/validation.js"></script>
+
+</body>
+
+</html>

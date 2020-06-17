@@ -1,0 +1,101 @@
+[{
+     "nameCommodity": "rower",
+     "codeCommodity": "27-89",
+     "priceNet": 22.99,
+     "vat": 22,
+     "priceBrut": 27.89,
+     "category": "sport",
+     "options": "Opcja 1, Opcja 2",
+     "rate": 4,
+     "file": "/img/27-89.jpg"
+}, {
+     "nameCommodity": "laptop",
+     "codeCommodity": "23-89",
+     "priceNet": 2000.99,
+     "vat": 22,
+     "priceBrut": 2500.89,
+     "category": "rtv",
+     "options": "Opcja 3, Opcja 2",
+     "rate": 5,
+     "file": "/img/23-89.jpg"
+}, {
+     "nameCommodity": "młotek",
+     "codeCommodity": "88-45",
+     "priceNet": 10.99,
+     "vat": 22,
+     "priceBrut": 11.34,
+     "category": "Narzędzia",
+     "options": "Opcja 1, Opcja 3",
+     "rate": 2,
+     "file": "/img/88-45.jpg"
+}, {
+     "nameCommodity": "Wiertarka",
+     "codeCommodity": "81-45",
+     "priceNet": 100.99,
+     "vat": 22,
+     "priceBrut": 122.34,
+     "category": "Narzędzia",
+     "options": "Opcja 1, Opcja 3",
+     "rate": 3,
+     "file": "/img/81-45.jpg"
+}, {
+     "nameCommodity": "Polonez Caro",
+     "codeCommodity": "11-45",
+     "priceNet": 2400.99,
+     "vat": 22,
+     "priceBrut": 2900.56,
+     "category": "Samochody",
+     "options": "Opcja 2, Opcja 3",
+     "rate": 5,
+     "file": "/img/11-45.jpg"
+}, {
+     "nameCommodity": "Toyota Supra",
+     "codeCommodity": "11-48",
+     "priceNet": 110000,
+     "vat": 22,
+     "priceBrut": 130000,
+     "category": "Samochody",
+     "options": "Opcja 4, Opcja 3",
+     "rate": 2,
+     "file": "/img/11-48.jpg"
+}, {
+     "nameCommodity": "Telewizor",
+     "codeCommodity": "34-56",
+     "priceNet": 450,
+     "vat": 10,
+     "priceBrut": 500,
+     "category": "rtv",
+     "options": "Opcja 1, Opcja 3",
+     "rate": 3,
+     "file": "/img/34-56.jpg"
+}, {
+     "nameCommodity": "Monitor",
+     "codeCommodity": "38-56",
+     "priceNet": 500,
+     "vat": 10,
+     "priceBrut": 550,
+     "category": "rtv",
+     "options": "Opcja 1, Opcja 3",
+     "rate": 5,
+     "file": "/img/38-56.jpg"
+}, {
+     "nameCommodity": "Bluza",
+     "codeCommodity": "55-36",
+     "priceNet": 50,
+     "vat": 15,
+     "priceBrut": 63,
+     "category": "Ubrania",
+     "options": "Opcja 1, Opcja 3",
+     "rate": 3,
+     "file": "/img/55-36.png"
+}, {
+     "nameCommodity": "Spodnie",
+     "codeCommodity": "55-37",
+     "priceNet": 55,
+     "vat": 15,
+     "priceBrut": 65,
+     "category": "Ubrania",
+     "options": "Opcja 2, Opcja 4",
+     "rate": 4,
+     "file": "/img/55-37.jpg"
+}]
